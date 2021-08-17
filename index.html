@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Vertical Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./heading-slide.css" />
+</head>
+
+<body>
+  <!-- Beginning animated Heading -->
+  <section class="animated-headeing-slide">
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h2>Feeding the World.</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>Going to the Moon.</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>Building a 3D World.</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>Filling Online Orders.</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>Enhancing National Defense.</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>Saving Lives.</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>Enhancing Quality of Life.</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>Working in Retail.</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>Enhancing the Supply Chain.</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>Keeping Us Safe. |Inspecting the World.</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>Maintaining Critical Systems.</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var $thumbs = $(".animated-headeing-slide .swiper-container");
+    var slideNumber = $thumbs.find(".swiper-slide").length / 5;
+    var slidesPerView = 5;
+
+    var swiper = new Swiper(".animated-headeing-slide .swiper-container", {
+      direction: "vertical",
+      loop: true,
+      loopAdditionalSlides: 0,
+      slidesPerView: slidesPerView,
+      initialSlide: slideNumber,
+      centeredSlides: false,
+      slideToClickedSlide: true,
+      speed: 500,
+      mousewheel: true,
+      autoplay: true,
+      autoHeight: true,
+      spaceBetween: 20
+    });
+
+  </script>
+</body>
+
+</html>
